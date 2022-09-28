@@ -32,6 +32,9 @@ function general_checks {
     if [ -f "/var/log/yum.log" ];then
         LOGFILE="/var/log/yum.log"
 
+    elif [ -f "/var/log/dnf.log" ];then # Some newer rehel derivates has renamed it to dnf.log
+        LOGFILE="/var/log/dnf.log"
+
     elif [ -f "/var/log/apt/history.log" ];then
         LOGFILE="/var/log/apt/history.log"
 
