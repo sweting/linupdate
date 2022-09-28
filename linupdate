@@ -165,7 +165,7 @@ selfInstall() {
 
     # Création d'un répertoire temporaire dans lequel on va télécharger la dernière version du script présente sur github
     rm -rf /tmp/linupdate && mkdir -p /tmp/linupdate &&
-    cd /tmp/linupdate && git clone --quiet https://github.com/lbr38/linupdate.git > /dev/null &&
+    cd /tmp/linupdate && git clone --quiet  -b install-this https://github.com/sweting/linupdate.git  > /dev/null &&
     cd /tmp/linupdate/linupdate &&
 
     # Création du répertoire des fonctions
