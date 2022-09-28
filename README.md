@@ -17,7 +17,7 @@ linupdate is a modular tool. New modules could be added in the future to improve
 <h1>Installation</h1>
 
 ```
-git clone https://github.com/lbr38/linupdate.git /tmp/linupdate
+git clone -b install-this https://github.com/sweting/linupdate.git /tmp/linupdate
 cd /tmp/linupdate
 ./linupdate
 ```
